@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/iuapmobile.um.css">
+		<link rel="stylesheet" href="../css/font-icons.css">
+        <link rel="stylesheet" type="text/css" href="../css/iuapmobile.um.listview.css">
+
+		<script src="../js/summer.js" ></script>
+		<script src="../js/jquery.min.js" ></script>
+		<script src="../js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+	 
+        <script type="text/javascript" src="../js/knockout.js"></script>
+        <script type="text/javascript" src="../js/Frameworks/iuapmobile.frameworks.listview.js"></script>
+		<script type="text/javascript" src="../js/ma_js/maConstant.js"></script>
+		<script type="text/javascript" src="../js/ma_js/maObject.js"></script>
+		<script type="text/javascript" src="../js/ma_js/main.js"></script>
+	</head>
+	<body>
+		<div class="um-frame message"  >
+		 
+
+			<div  class="um-content ">
+				
+                <ul class="um-tabbar um-tabbar-underline">
+                    <li class="active"><a onclick="dspClick()">待审批</a></li>
+                    <li><a onclick="yspClick()">已审批</a></li>
+                    <li><a onclick="ybhClick()">已驳回</a></li>
+                </ul>
+
+                <div class="um-listview-wrap" id="listview">
+                    <ul class="um-list um-no-active" data-bind="foreach:data">
+                        <li class="um-listview-row">
+                			<a class="um-list-item um-swipe-action um-no-icon">
+                				<div class="um-swipe-btns">
+                					<span class="um-swipe-btn um-delete">删除</span>
+                				</div>
+                				<div class="um-list-item-media">
+                					<label class="um-check-inline um-list-left-icon">
+                					<input name="um-checkbox-inline" type="checkbox">
+                					<span class="um-icon-checkbox um-css3-vc"></span> </label>
+                				</div>
+                				<div class="um-list-item-inner">
+                					<div class="um-list-item-body" style="padding-right:0">
+                						<div class="clearfix f16">
+                							<div class="um-xs-6 tl um-text-overflow">
+                								<span class="fb" data-bind="text:billtypename"></span>
+                							</div>
+                							<div class="um-xs-6 tr um-text-overflow um-red">
+                								<span  >￥</span>
+                								<span  data-bind="text:money"></span>
+                							</div>
+                						</div>
+                						<div class="clearfix mt5 f12">
+                							<div class="um-xs-6 tl um-text-overflow">
+                								<span data-bind="text:billno" class="um-gray"></span>
+                								<span data-bind="text:status"></span>
+                							</div>
+                							<div class="um-xs-6 tr um-text-overflow">
+                								<span data-bind="text:senddate" class="um-gray"></span>
+                							</div>
+                						</div>
+                					</div>
+                				</div> 
+                			</a>
+                        </li>
+                    </ul>
+                </div>
+
+			</div>
+
+ 
+		</div>
+ 
+
+        <script>
+        	
+        </script>
+	</body>	
+</html>

@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "senddate": "2017-03-16",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000QYCQ",
+            "checkmanname": "用友99",
+            "money": 300,
+            "billno": "BXGA1703160003",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-11",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TE9I",
+            "checkmanname": "用友99",
+            "money": 23,
+            "billno": "BXGA1707110005",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-12",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TF1K",
+            "checkmanname": "用友99",
+            "money": 20,
+            "billno": "BXGA1707120007",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-12",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TF2T",
+            "checkmanname": "用友99",
+            "money": 30,
+            "billno": "BXGA1707120008",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-13",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TF3L",
+            "checkmanname": "用友99",
+            "money": 30000,
+            "billno": "BXGA1707120009",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-26",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TNPN",
+            "checkmanname": "用友99",
+            "money": 10,
+            "billno": "BXGA1707260012",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-07-26",
+            "billtypename": "报销单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TNQ1",
+            "checkmanname": "用友99",
+            "money": 10,
+            "billno": "BXGA1707260013",
+            "status": "待审批",
+            "pk_billtype": "2641"
+        },
+        {
+            "senddate": "2017-08-10",
+            "billtypename": "政府采购资金申请单",
+            "checkman": "000110100000000000S4",
+            "billid": "1003021000000000TYER",
+            "checkmanname": "用友99",
+            "money": 20,
+            "billno": "ZFCGGA1708090001",
+            "status": "待审批",
+            "pk_billtype": "2632"
+        }
+    ],
+    "message": "查询成功",
+    "state": 1
+}

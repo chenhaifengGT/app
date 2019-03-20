@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="um-frame">
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/iuapmobile.um.css">
+		<link rel="stylesheet" href="../css/font-icons.css">	
+		<script src="../js/summer.js" ></script>
+		<script src="../js/jquery.min.js" ></script>
+		<script src="../js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script type="text/javascript" src="../js/ma_js/maConstant.js"></script>
+		<script type="text/javascript" src="../js/ma_js/maObject.js"></script>
+		<style>
+			.um-panel{
+				padding-top: 0px;
+				
+			}
+			#userInfo{
+				margin-top: 20px;
+			}
+			.um-header-personal{
+				height: 80px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="um-frame my">
+
+			<div class="um-content">
+				
+                
+                	
+                    <div id="userInfo" class="um-header um-header-personal um-panel h100">
+    
+                        	
+ 
+                            	<div class="um-media-left mt10 ml20">
+                            		<img class="um-circle" height=60 width=60 src="../img/weather.png" alt="...">
+                            	</div>
+                            	<div class="um-media-body ml15 um-black mt10 ">
+                            		
+                            		<span class= "fb f20" id="username">用友test</span>
+                            		<div>
+                            			<span class="um-gray f12">用户编码:</span>
+                            			<span class="um-gray f12" id="usercode">yonyou</span>
+                            		</div>
+                            	</div>
+
+                    </div>
+                	
+                    <button class="btn um-btn-warning" onclick="outLogin()">退出登陆</button>
+
+			</div>
+		</div>
+		
+		<script>
+			summerready = function(){
+				var usercode = localStorage.getItem("usercode");
+				var username = localStorage.getItem("username");
+				if(checkVar(usercode)){
+					$("#usercode").text(usercode);
+				}
+				if(checkVar(username)){
+					$("#username").text(username);
+				}
+				
+			}
+			
+			function checkVar(v){
+					if(v == null || v == undefined || v == ""){
+						return false;
+					}else{
+						return true;
+					}
+				}
+			
+			function outLogin(){
+				localStorage.removeItem('username');
+				localStorage.removeItem('pk_log');
+				localStorage.removeItem('pk_corp');
+				localStorage.removeItem('userid');
+				localStorage.removeItem('password');
+				
+				maObject.openHtml("login","login.html",{});
+				
+			}
+		</script>
+	</body>
+</html>

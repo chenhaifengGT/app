@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/iuapmobile.um.css">
+		<link rel="stylesheet" href="./css/font-icons.css">
+		<script src="./js/summer.js" ></script>
+		<script src="./js/jquery.min.js" ></script>
+		<script src="./js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script type="text/javascript" src="./js/ma_js/maConstant.js"></script>
+		<script type="text/javascript" src="./js/ma_js/maObject.js"></script>
+		<script src='./js/index.js'></script>
+		<style>
+			.um-header{
+				background: white;
+			}
+			#h-title{
+				color : #007AFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="um-win" id="index"> 
+			<div class="um-header um-header-light" id='header'>
+				<h3 id="h-title"></h3>
+			</div>
+			<div class="um-content" id="content">
+			 
+			</div>
+			<div class="um-footer" id='footer'>
+				<div class="um-footerbar" id='nav'>
+					<a id="dsp" href="#" class="um-footerbar-item message active" onclick="openTab('dsp','待审批')">
+						<i class="ti-comments f20"></i>
+						<div class="f12 lh1">待审批</div>
+					</a>
+					<a id="ysp" href="#" class="um-footerbar-item connect" onclick="openTab('ysp','已审批')">
+						<i class="ti-check-box f20"></i>
+						<div class="f12 lh1">已审批</div>
+					</a>
+					<a id="ybh" href="#" class="um-footerbar-item application" onclick="openTab('ybh','已驳回')">
+						<i class="ti-share-alt f20"></i>
+						<div class="f12 lh1">已驳回</div>
+					</a>	        
+					<a id="my" href="#" class="um-footerbar-item my" onclick="openTab('my','我')">
+						<i class="ti-user f20"></i>
+						<div class="f12 lh1">我</div>
+					</a>
+				</div>
+			</div> 
+		</div>
+		
+	</body>
+</html>
